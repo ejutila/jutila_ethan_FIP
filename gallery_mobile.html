@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Guitar Pickables Mobile Guitars</title>
+<link href="css/main-mobile.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <!-- students must convert divs to semantic tags -->
+	<div id="container">
+        <h1 class="hidden">Welcome to Guitar Pickables</h1>
+        <div id="header-con">
+            <div id="main-header" class="grid-con">
+                <img src="images/guitar_pickables_logo.png" alt="guitar pickables logo" width="86" height="88">
+                 <nav id="mobile-nav">
+                    <h2 class="hidden">Main Navigation</h2>
+                    <span class="burger"></span>
+                    <span class="burger"></span>
+                    <span class="burger"></span>
+                 </nav>
+            </div>
+        </div> 
+
+        <main>
+            <div id="hero-gallery-con">
+                <div class="grid-con box-color">
+                    <div id="hero-gallery-text">
+                        <h2>Guitars</h2>
+                        <p>Anything from electric, to acoustic,
+                            to ukuleles, to 8 string guitars,
+                            everything will be here!</p>
+                    </div>
+                    <div id="gallery-controls">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-con" id="gallery">
+                <h3>Showcase</h3>
+                <div class="gallery-box">
+                    <img src="images/dreadnaught-mobile.jpg" alt="Dreadnaught Acoustic Guitar" width="388" height="203">
+                        <h4><a href="#">Simon & Patric<br>
+                            Songsmith Natural Dreadnaught</a></h4>
+                        <p>$629.99</p>
+                </div>
+                <div class="gallery-box">
+                    <img src="images/EL-00-Mobile.jpg" alt="EL-00" width="388" height="202">
+                        <h4><a href="#">Epiphone<br>
+                            EL-00 Studio Acoustic/Electric</a></h4>
+                        <p>$629.99</p>
+                </div>
+                <div class="gallery-box">
+                    <img src="images/cherry-sd-mobile.jpg" alt="Epiphone SG Standard" width="388" height="203">
+                    <h4><a href="#">Epiphone<br>
+                        SG Standard</a></h4>
+                        <p>$729.99</p>
+                </div>
+                <div class="gallery-box">
+                    <img src="images/strat-g.jpg" alt="Squier Stratocaster" width="388" height="203">
+                        <h4><a href="#">Squier<br>
+                            Stratocaster</a></h4>
+                            <p>$829.99</p>
+                </div>
+
+                <div class="gallery-box">
+                    <img src="images/emtc.jpg" alt="Gretsch Jet Bass" width="388" height="203">
+                    <h4><a href="#">Gretsch<br>
+                        EMTC JR Jet Bass</a></h4>
+                        <p>$379.99</p>
+                </div>
+                <div class="gallery-box">
+                    <img src="images/epilani.jpg" alt="Epiphone Epilani Ukulele" width="388" height="203">
+                    <h4><a href="#">Epiphone<br>
+                        Epilani Soprano Ukulele</a></h4>
+                        <p>$139.99</p>
+                </div>
+            </div>              
+        </main>
+
+        <section id="footer-con">
+            <h2 class="hidden">Footer</h2>
+            <div class="grid-con">
+                <div id="footer-box">
+                    <img src="images/guitar_pickables_logo.png" alt="image" width="136" height="138" id="header-logo">
+                </div>
+                <div id="footer-newsletter">
+                    <p>Newsletter - Sign-up and get a coupon for 10% off guitar accessories!</p>
+                <form action="email.php" method="POST" enctype="text/plain">
+                    <input name="contactInfo" type="text" placeholder="Enter your email here..">
+                    <input name="submit" type="submit" value="Send">
+                </form>
+                </div>
+            </div>
+        </section>
+    </div> 
+</body>
+</html>

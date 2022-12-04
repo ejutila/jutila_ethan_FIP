@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Guitar Pickables Mobile</title>
+<link href="css/main-mobile.css" rel="stylesheet" type="text/css">
+</head>
+<!-- students must convert divs to semantic tags -->
+<body>
+	<div id="container">
+        <h1 class="hidden">Welcome to Guitar Pickables</h1>
+        <div id="header-con">
+            <div id="main-header" class="grid-con">
+                <img src="images/guitar_pickables_logo.png" alt="guitar pickables logo" width="86" height="88">
+                 <nav id="mobile-nav">
+                    <h2 class="hidden">Main Navigation</h2>
+                    <span class="burger"></span>
+                    <span class="burger"></span>
+                    <span class="burger"></span>
+                 </nav>
+            </div>
+        </div> 
+
+        <main>
+            <section id="hero-con">
+                <h3 class="hidden">Hero</h3>
+                <div class="grid-con box-color">
+                    <div id="hero-text">
+                        <h4>Your next Guitar experience is just around the corner...</h4>
+                        <br>
+                        <p>Guitar Pickables is the one-stop place for everything guitar and with it; music production. Our goal is to get more people into the magnificent instrument that is the guitar no matter the kind. Whether you are a brand new player who may not know where to start, or if you are experienced but don't know where to go next, we have your back!</p>
+                        <input name="submit" type="submit" value="Learn More About Us">
+                    </div>
+                    <div class="box-color"></div>
+                </div>
+            </section>
+
+            <section id="image-slider-con">
+                <h3>News</h3>
+                <img src="images/recording-studio-mobile.png" alt="recording studio">
+                <!-- ascii symbols for <> -->
+                <span id="mobile-slider-left">&#60;</span>
+                <span id="mobile-slider-right">&#62;</span>
+                <p>Recording Studio Grand Opening!</p>
+            </section>
+
+            <section id="about-us-con">
+                <div id="about-us-text-con">     
+                    <div class="grid-con">
+                        <div id="about-us-text">
+                            <h3>Guitarists Helping Guitarists</h3>
+                            <p>Us at Guitar Pickables know what it's like to search for what equipment and services you need for your guitar, they're quite spread thin and far out. As guitar players ourselves, we guarantee the best possible service for your needs. Need string replacements? Need advice on a certain guitar or peripheral? We've got you!</p>
+                            <input name="submit" type="submit" value="Learn More">
+                        </div>
+                    </div>      
+                </div>  
+                <div class="grid-con" id="about-us-photos">
+                    <img src="images/Circles-mobile.png" alt="guitar players">
+                </div>         
+            </section>
+
+            <section id="contact-us-con">
+                <div class="grid-con">
+                    <div id="contact-text">
+                        <h3 class="hidden">Contact Information</h3>
+                        <h4>Contact Us!</h4>
+                        <p>Any questions? Concerns? Or maybe even suggestions or feedback? Please be sure to let us know! We're more than willing to listen to anything that comes to mind.</p>
+
+                        <div id="contact-info">
+                            <p><b>Guitar Pickables (Inc.)</b></p>
+                            <p>443 Simpson St, Thunder Bay, ON P7C 3J3
+                            <br>
+                            Phone: +1 866 202-1179<br>
+                            Email: info[at]guitarpickables.com</p>
+                        </div>
+                    </div>
+                    <div id="contact-form" class="box-color2">
+                        <h4>Contact Form</h4>
+                        <hr class="title-line">
+                        <br>
+                        <form action="email.php" method="POST" enctype="text/plain">
+                            <input name="fullName" type="text" placeholder="Enter your name here..">
+                            <input name="contactInfo" type="text" required placeholder="Enter your email here..">
+                            <input name="subject" type="text" required placeholder="Enter subject here..">
+                            <textarea name="msg" placeholder="Enter your message here"></textarea> <br>
+                            <input name="submit" type="submit" value="Send">
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <section id="footer-con">
+            <h2 class="hidden">Footer</h2>
+            <div class="grid-con">
+                <div id="footer-box">
+                    <img src="images/guitar_pickables_logo.png" alt="image" width="136" height="138" id="header-logo">
+                </div>
+                <div id="footer-newsletter">
+                    <p>Newsletter - Sign-up and get a coupon for 10% off guitar accessories!</p>
+                <form action="email.php" method="POST" enctype="text/plain">
+                    <input name="contactInfo" type="text" placeholder="Enter your email here..">
+                    <input name="submit" type="submit" value="Send">
+                </form>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

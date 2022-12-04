@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Guitar Pickables</title>
+<link href="css/main.css" rel="stylesheet">
+</head>
+<!-- students must convert divs to semantic tags -->
+<body>
+    <div id="container">
+        <h1 class="hidden">Welcome to Guitar Pickables</h1>
+        <div id="header-con">
+            <header id="main-header" class="grid-con">
+                <div id="logo">
+                    <img src="images/guitar_pickables_logo.png" alt="guitar pickables logo" width="169" height="174"> 
+                </div>
+                <nav id="main-nav">
+                    <h2 class="hidden">Main Navigation</h2>
+                    <ul>
+                        <li><a href="index.html"><b>Home</b></a></li>
+                        <li><a href="gallery.html"><b>Guitars</b></a></li>
+                        <li><a href="#"><b>Contact</b></a></li>
+                        <li><a id="book-now" href="#"><b>BOOK NOW</b></a></li>
+                    </ul>
+                </nav>
+                <div id="header-box2">
+                    <a id="shopping-cart" href="#"><img src="images/shopping-cart.png" alt="shopping-cart" width="110" height="93"></a>
+                    <a id="profile" href="#"><img src="images/user.png" alt="profile" width="101" height="101"></a>
+                </div>
+            </header>
+        </div> 
+    </div>
+    <main>
+        <section class="grid-con" id="hero">
+            <div id="hero-text">
+                <h2>Your next Guitar experience is just around the corner... </h2>
+                <hr class="title-line">
+                <br>
+                <p>Guitar Pickables is the one-stop place for everything guitar and with it; music production. Our goal is to get more people into the magnificent instrument that is the guitar no matter the kind. Whether you are a brand new player who may not know where to start, or if you are experienced but don't know where to go next, we have your back!</p>
+                <input name="submit" type="submit" value="Learn More About Us">
+            </div>
+                <img src="images/hero-image.png" alt="person playing electric guitar" id="hero-image">
+        </section>  
+
+        <section class="grid-con" id="news">
+            <h2>News</h2>
+
+            <div class="news-box" id="news1">
+                <img src="images/recording-studio.png" alt="recording studio">
+                <p class="news-text1"><a href="#">Recording Studio Grand Opening!</a></p>
+            </div>
+            <div class="news-box" id="news2">
+                <img src="images/fender.png" alt="image">
+                <p class="news-text2"><a href="#">Fender Guitars 50% Off!</a></p>
+            </div>
+            <div class="news-box" id="news3">
+                <img src="images/amp.png" alt="image">
+                <p class="news-text3"><a href="#">Buy 1 Get 50% Off Amplifiers!</a></p>
+            </div>
+        </section>
+
+        <section id="about-title">
+            <div id="about-con">
+                <div class="grid-con" id="about">
+                    <div id="about-text">
+                        <h2>Guitarists Helping Guitarists</h2>
+                        <hr class="title-line">
+                        <p>Us at Guitar Pickables know what it's like to search for what equipment and services you need for your guitar, they're quite spread thin and far out. As guitar players ourselves, we guarantee the best possible service for your needs. Need string replacements? Need advice on a certain guitar or peripheral? We've got you!</p>
+                        <input name="submit" type="submit" value="Learn More">
+                    </div>
+                    <img src="images/Circles.png" alt="image" id="about-image">
+                </div>
+            </div>
+        </section>
+            
+        <section class="grid-con" id="contact">
+            <div id="contact-text">
+                <h2 class="hidden">Contact Information</h2>
+                <h3>Contact Us!</h3>
+                    <hr class="title-line">
+                    <p>Any questions? Concerns? Or maybe even suggestions or feedback? Please be sure to let us know! We're more than willing to listen to anything that comes to mind.</p>
+                <div id="contact-info">
+                    <hr class="paragraph-line">
+                    <h3><b>Guitar Pickables (Inc.)</b></h3><br>
+                    <p>443 Simpson St, Thunder Bay, ON P7C 3J3
+                    <br>
+                    Phone: +1 866 202-1179<br>
+                    Email:info[at]guitarpickables.com</p>
+                </div>
+            </div>
+
+            <div id="contact-form">
+                <h3>Contact Form</h3>
+                <form action="email.php" method="POST" enctype="text/plain">
+                    <input name="fullName" type="text" placeholder="Enter your name here..">
+                    <input name="contactInfo" type="text" required placeholder="Enter your email here..">
+                    <input name="subject" type="text" required placeholder="Enter subject here..">
+                    <textarea name="msg" placeholder="Enter your message here"></textarea>
+                    <input name="submit" type="submit" value="Send">
+                </form>
+            </div>
+        </section> 
+    </main>
+
+        <section class="grid-con" id="footer-con">
+            <h2 class="hidden">Footer Navigation</h2>
+            <div id="footer-logo">
+                <img src="images/guitar_pickables_logo.png" alt="guitar pickables logo" width="169" height="174"> 
+            </div>
+            <nav id="footer-nav">
+                <ul>
+                    <li><a href="index.html"><b>Home</b></a></li>
+                    <li><a href="gallery.html"><b>Guitars</b></a></li>
+                    <li><a href="#"><b>Contact</b></a></li>
+                    <li><a id="book-now-footer" href="#"><b>BOOK NOW</b></a></li>
+                    <li><a id="login" href="#"><b>Login/Sign Up</b></a></li>
+                </ul>
+            </nav>
+            <div id="footer-newsletter">
+                <p>Newsletter - Sign-up and get a coupon for 10% off guitar accessories!</p>
+                <form action="email.php" method="POST" enctype="text/plain">
+                    <input name="contactInfo" type="text" placeholder="Enter your email here..">
+                    <input name="submit" type="submit" value="Send">
+                </form>
+            </div>
+            <div id="footer-social">
+            </div>
+        </section>
+</body>
+</html>

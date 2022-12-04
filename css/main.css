@@ -1,0 +1,602 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*Remove this rule on your HTML elements as you start to fill them with content*/
+
+.box-color {
+	color: #fff;
+	background: rgba(0, 0, 0, 0.8);
+	border-radius: 10px;
+	text-align: left;
+	margin: 0;
+	height: 581px;
+}
+
+/*basic reset*/
+
+/*browsers have built in values for elements so we'll reset a few things to zero, you can add to this or remove items as needed*/
+
+@font-face {
+	font-family: 'Cambria Regular';
+	src: url('Cambria.eot');
+	src: url('Cambria.eot?#iefix') format('embedded-opentype'),
+	url('Cambria.woff') format('woff'),
+	url('Cambria.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	}
+
+div,p,body,header,footer,section,article,nav { 
+	margin: 0; 
+	padding: 0; 
+}	
+
+img { 
+	border: none; /*Remove border if image is a link*/
+	margin: 0; 
+	padding: 0; 
+}
+
+/*html selectors*/
+
+body {
+	font-size: 12px;
+	font-family: 'Cambria Regular', Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+/* Remove underlines from links */
+
+a {
+	text-decoration: none;
+}
+
+/*hide elements from browser but show for doc outline*/
+
+.hidden {
+	display: none;
+}
+
+
+/*Common page elements  */
+
+/*This is essentially a box that we place the whole site in.  
+We center the box using margin 0 auto and give it a fixed width of 1920px.
+1920px would fit a large monitor or tv. Sizes will vary depending on the projects
+you work on and the intended audience */
+
+#container {
+	margin: 0 auto;
+	width: 1920px;
+}
+
+/* this is our grid based off of our XD file */
+.grid-con {
+	display: grid;
+	grid-template-columns: repeat(12, 122px);
+	grid-column-gap: 16px;
+	padding-left: 140px;
+	padding-right: 140px;
+}
+
+#header-con {
+	background-color: #ddd;
+	height: 180px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#logo {
+	grid-column: 1/3;
+	/* Remove as content will dictate height */
+}
+
+#main-nav {
+	grid-column: 3/10;
+	/* Remove as content will dictate height */
+	height: 120px;
+	margin-top: 25px;
+}
+
+#main-nav ul {
+	list-style: none;
+    padding: 0;
+    margin-top: 35px;
+	margin-right: 20px;
+	font-size: 40px;
+	word-spacing: 74px;
+}
+
+#main-nav ul li {
+    display: inline;
+    margin-right: 28px;
+}
+
+#main-nav ul a {
+	color: #064970;
+}
+
+#main-nav ul li a:hover {
+    border-bottom: 6px solid #fff;
+    padding-bottom: 8px;
+	transition: all 400ms ease-in;
+}
+
+#main-nav ul li:last-child {
+    margin-right: 0;
+}
+
+#book-now {
+	word-spacing: 2px;
+}
+
+#shopping-cart {
+	margin-left: 80px;
+}
+
+#profile {
+	margin-left: 40px;
+}
+
+#header-box2 {
+	grid-column: 10/-1;
+	/* Remove as content will dictate height */
+	height: 120px;
+	margin-top: 25px;
+}
+
+/* Specific to index page desktop  */
+.title-line {
+	display: none;
+}
+
+#hero {
+	margin-top: 100px;
+}
+
+#hero-text {
+	grid-column: 1/6;
+	/* Remove as content will dictate height */
+	height: 582px;
+}
+
+#hero-text h2 {
+	font-size: 50px;
+	color: #064970;
+}
+
+#hero-text p {
+	font-size: 25px;
+	display: flex;
+	flex-direction: column;
+}
+
+#hero-text input[type="submit"] {
+    width: 300px;
+    padding: 16px 32px;
+	background-color: #94D8FF;
+    color: #fff;
+	font-size: 24px;
+	font-family: 'Cambria Regular', Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: 2px solid #d6d6d6;
+	border-radius: 10px;
+    transition: all 200ms ease-in;
+    align-self: flex-start;
+	margin-top: 50px;
+}
+
+#hero-text input[type="submit"]:hover {
+    background-color: #0E75B0;
+    border-radius: 10px;
+}
+
+#hero-image {
+	grid-column: 8/-1;
+	/* Remove as content will dictate height */
+	height: 582px;
+}
+
+#news {
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+#news h2 {
+	font-size: 50px;
+	grid-column: 1/-1;
+	text-align: center;
+}
+
+#news1 {
+	grid-column: 1/5;
+	/* Remove as content will dictate height */
+	text-align: center;
+	height: 507px;
+	font-size: 45px;
+}
+
+#news1 a {
+	color: black;
+}
+
+#news1 p a:hover {
+	border-bottom: 3px solid #064970;
+    padding-bottom: 2px;
+	transition: all 200ms ease-in;
+}
+
+#news2 {
+	grid-column: 5/9;
+	/* Remove as content will dictate height */
+	text-align: center;
+	height: 507px;
+	font-size: 45px;
+}
+
+#news2 a {
+	color: black;
+}
+
+#news2 p a:hover {
+	border-bottom: 3px solid #064970;
+    padding-bottom: 2px;
+	transition: all 200ms ease-in;
+}
+
+#news3 {
+	grid-column: 9/-1;
+	/* Remove as content will dictate height */
+	text-align: center;
+	height: 507px;
+	font-size: 45px;
+}
+
+#news3 a {
+	color: black;
+}
+
+#news3 p a:hover {
+	border-bottom: 3px solid #064970;
+    padding-bottom: 2px;
+	transition: all 200ms ease-in;
+}
+
+.news-text1 {
+	padding-top: 52.5px;
+}
+
+.news-text2 {
+	padding-top: 52.5px;
+}
+
+.news-text3 {
+	padding-top: 52.5px;
+}
+
+.news-box {
+	background-color: #94D8FF;
+	border-radius: 10px;
+}
+
+#about-con {
+	background-color: #C0D9E8;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#about-title {
+	text-align: left;
+}
+
+#about-text {
+	grid-column: 1/6;
+	/* Remove as content will dictate height */
+	height: 700px;
+}
+
+#about-text h2 {
+	font-size: 50px;
+	color: #064970;
+}
+
+#about-text p {
+	font-size: 25px;
+}
+
+#about-text input[type="submit"] {
+    width: 190px;
+    padding: 16px 32px;
+	background-color: #94D8FF;
+    color: #fff;
+	font-size: 24px;
+	font-family: 'Cambria Regular', Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: 2px solid #fff;
+	border-radius: 10px;
+    transition: all 200ms ease-in;
+    align-self: flex-start;
+	margin-top: 50px;
+}
+
+#about-text input[type="submit"]:hover {
+    background-color: #0E75B0;
+    border-radius: 10px;
+}
+
+#about-image {
+	grid-column: 8/-1;
+	/* Remove as content will dictate height */
+	height: 700px;
+}
+
+#contact {
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+#contact-text {
+	grid-column: 1/6;
+	height: 250px
+}
+
+#contact-text h3 {
+	color: #064970;
+	font-size: 35px;
+}
+
+#contact-text p {
+	font-size: 25px;
+}
+
+.paragraph-line {
+	margin-top: 50px;
+	color: #0E75B0;
+}
+
+#contact-info {
+	font-size: 35px;
+	grid-column: 1/6;
+}
+
+#contact-info h3{
+	color: #064970;
+}
+
+#contact-form {
+	grid-column: 8/-1;
+	/* Remove as content will dictate height */
+	font-size: 32px;
+	color: #064970;
+	align-self: center;
+	height: 800px;
+}
+
+#contact-form h3 {
+	align-self: center;
+}
+
+#contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-form input, textarea {
+    padding: 22px;
+    border: 2px solid #d6d6d6;
+    border-radius:  5px;
+    background-color: #f7f7f7;
+    margin-bottom: 30px;
+    font: inherit;
+}
+
+#contact-form input {
+	font-size: 24px;
+}
+
+#contact-form textarea {
+	font-size: 24px;
+    height: 250px;
+}
+
+#contact-form input[type="submit"] {
+    width: 140px;
+    padding: 16px 32px;
+	background-color: #94D8FF;
+    color: #fff;
+	font-size: 32px;
+    border: none;
+    transition: all 200ms ease-in;
+    align-self: flex-start;
+}
+
+#contact-form input[type="submit"]:hover {
+    background-color: #0E75B0;
+    border-radius: 10px;
+}
+
+/*Common page elements  */
+
+#footer-con {
+	background-color: #aaaaaa;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+#footer-logo {
+	grid-column: 1/3;
+	/* Remove as content will dictate height */
+	height: 90px;
+}
+
+#footer-nav {
+	grid-column: 3/-1;
+	/* Remove as content will dictate height */
+	height: 20px;
+	margin-bottom: 50px;
+}
+
+#footer-nav ul {
+	list-style: none;
+    padding: 0;
+    margin-top: 65px;
+	margin-right: 20px;
+	font-size: 40px;
+	word-spacing: 74px;
+}
+
+#footer-nav ul li {
+	display: inline;
+    margin-right: 28px;
+}
+
+#footer-nav ul a {
+	color: #064970;
+}
+
+#footer-nav ul a:hover{
+	border-bottom: 6px solid #fff;
+    padding-bottom: 8px;
+	transition: all 400ms ease-in;
+}
+
+#footer-nav ul li:last-child {
+    margin-right: 0;
+}
+
+#book-now-footer {
+	word-spacing: 2px;
+}
+
+#login {
+	word-spacing: 0px;
+}
+#login b {
+	color: #0E75B0;
+}
+#footer-newsletter {
+	margin-top: 100px;
+	grid-column: 1/7;
+	/* Remove as content will dictate height */
+	height: 80px;
+}
+
+#footer-newsletter p {
+	padding-bottom: 10px;
+	font-size: 24px;
+}
+
+#footer-newsletter input, textarea {
+	width: 400px;
+    padding: 12px;
+    border: 2px solid #d6d6d6;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+    margin-bottom: 30px;
+    font: inherit;
+	transition: all 200ms ease-in;
+}
+
+#footer-newsletter input {
+	font-size: 14px;
+}
+
+#footer-newsletter textarea {
+	font-size: 14px;
+    height: 250px;
+}
+
+#footer-newsletter input[type="submit"] {
+	width: 75px;
+	padding: 12px;
+	background-color: #94D8FF;
+	color: #fff;
+	border: none;
+}
+#footer-newsletter input[type="submit"]:hover {
+    background-color: #0E75B0;
+    border-radius: 10px;
+}
+
+#footer-social {
+	grid-column: 11/-1;
+	/* Remove as content will dictate height */
+	height: 80px;
+}
+
+.btn {
+	width: 190px;
+	
+}
+
+/* gallery page */
+
+#gallery-hero-con {
+	background-color: rgb(0, 0, 0, 0.8);
+	background: url("../images/guitar_inventory.jpg");
+	height: 580px;
+}
+
+#gallery-text {
+	grid-column: 1/9;
+	/* Remove as content will dictate height */
+	height: 200px;
+	margin-top: 50px;
+}
+
+#gallery-text h2{
+	font-size: 80px;
+}
+
+#gallery-text p {
+	font-size: 42px;
+}
+
+#gallery-controls {
+	margin-top: 200px;
+	grid-column: 6/8;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.dot {
+	background-color: #dddddd;
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	margin: 5px;
+  }
+
+#gallery h2 {
+	grid-column: 1/-1;
+	font-size: 48px;
+	color: #064970;
+	text-align: center;
+  }
+
+.gallery-box {
+	background-color: white;
+	grid-column: span 4 / span 4;
+	/* Remove as content will dictate height */
+	height: 507px;
+	margin-bottom: 20px;
+}
+
+#gallery a {
+	color: #064970;
+}
+
+#gallery h3 a:hover {
+	border-bottom: 3px solid #0E75B0;
+    padding-bottom: 2px;
+	transition: all 100ms ease-in;
+}
+
+.gallery-box h3 {
+	font-size: 35px;
+	text-align: center;
+	color: #064970;
+}
+
+.gallery-box p{
+	font-size: 35px;
+	text-align: center;
+}
